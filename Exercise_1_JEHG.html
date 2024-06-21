@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pre-Work Title</title>
+</head>
+<body></body>
+</html>
+<script>
+    const p = document.createElement("p");
+    const strong = document.createElement("strong");
+    p.textContent = "Hello there, you are ";
+    strong.textContent = "manipulating ";
+    p.append(strong);
+    p.append("the DOM!")
+    p.setAttribute("style","color:purple");
+    p.setAttribute("id","intro")
+    document.body.append(p);
+</script>
