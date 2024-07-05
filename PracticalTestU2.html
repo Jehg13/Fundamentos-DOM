@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Evaluation Unit 2</title>
+</head>
+<body></body>
+<script>
+    /*Jesus Efren Hinojosa Guerra*/
+    const title = document.createElement('p');
+    const p = document.createElement('p');
+    const comment = document.createElement('p');
+    const div = document.createElement('div');
+    const menu = document.createElement('div');
+    const input = document.createElement('input')
+    const Schoolli = document.createElement('li');
+    const Workli = document.createElement('li');
+    const Hobbiesli = document.createElement('li');
+    const elementsUl = document.createElement('ul');
+    const School = document.createElement('a');
+    const Work = document.createElement('a');
+    const Hobbies = document.createElement('a');
+    const button = document.createElement('button');
+    const divButton = document.createElement('div');
+
+    title.textContent = 'Evaluation Unit 2'
+    comment.textContent= 'Leave your comment about our university';
+    p.textContent ='Welcome to the UTTN, the better university on the country';
+    School.textContent = 'School';
+    Work.textContent = 'Work';
+    Hobbies.textContent = 'Hobbies';
+    button.textContent = 'Send comment'
+    Workli.setAttribute('id', 'ElementMenu');
+    Hobbiesli.setAttribute('id', 'ElementMenu');
+    Schoolli.setAttribute('id', 'ElementMenu');
+    Schoolli.setAttribute('style','margin:20px;font-size:20px;color:white;')
+    Hobbiesli.setAttribute('style','margin:20px;font-size:20px;color:white;')
+    Workli.setAttribute('style','margin:20px;font-size:20px;color:white;')
+    button.setAttribute('style', 'width:130px;height:30px;margin-top: 20px;color: white; background-color: black; border-radius:20px;')
+
+    title.setAttribute('style', 'text-align: center; font-size: 40px;')
+    menu.setAttribute('id', 'Menu');
+    menu.setAttribute('style','border: 1px solid black; width: 80%; height: 70px; margin: 0 auto; text-align: center;background-color: green;')
+    elementsUl.setAttribute('style', 'list-style: none; display:flex;justify-content:center;margin-top: 0px;');
+    div.setAttribute('id', 'Content');
+    div.setAttribute('style', 'border: 1px solid black; width: 400px; height: 140px; margin: 0 auto; text-align: center; display:block;');
+    p.setAttribute('style', 'color: green;text-align: center; font-size: 30px');
+    document.body.append(title);
+    document.body.append(menu);
+    document.body.append(p);
+    document.body.append(div);
+    document.body.append(divButton)
+    menu.appendChild(elementsUl);
+    elementsUl.append(Schoolli);
+    elementsUl.append(Workli);
+    elementsUl.append(Hobbiesli);
+    Schoolli.appendChild(School);
+    Workli.appendChild(Work);
+    Hobbiesli.appendChild(Hobbies);
+    div.append(comment);
+    div.append(input);
+    div.append(divButton);
+    divButton.append(button);
+</script>
+</html>
